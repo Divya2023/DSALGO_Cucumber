@@ -1,5 +1,6 @@
 package com.pages;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 
@@ -147,7 +148,7 @@ public class RegisterPage{
 	}
 	public String getErrorMessage()
 	{
-		WebDriverWait wait = new WebDriverWait(driver,30);
+		WebDriverWait wait = new WebDriverWait(driver,(30));
 		wait.until(ExpectedConditions.visibilityOf(Errormsg));
 		String errormessage= Errormsg.getText();
 		return errormessage;
@@ -159,7 +160,7 @@ public class RegisterPage{
 		for (Map<String, String> row : data) {
 			String usernameValue = row.get("username");
 			try {
-				WebDriverWait wait = new WebDriverWait(driver,20);
+				WebDriverWait wait = new WebDriverWait(driver,(30));
 				wait.until(ExpectedConditions.visibilityOf(username)); 
 				username.sendKeys(usernameValue);
 			} catch (Exception e) {
@@ -175,7 +176,7 @@ public class RegisterPage{
 		List<Map<String, String>> data = UserRegiserData.asMaps(String.class, String.class);
 		for (Map<String, String> row : data) {
 			String passwordValue = row.get("password");
-			WebDriverWait wait = new WebDriverWait(driver,30);
+			WebDriverWait wait = new WebDriverWait(driver,(30));
 			wait.until(ExpectedConditions.visibilityOf(password1)); 
 			
 			password1.sendKeys(passwordValue);

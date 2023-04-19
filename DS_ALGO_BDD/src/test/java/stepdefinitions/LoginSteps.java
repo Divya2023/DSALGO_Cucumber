@@ -27,10 +27,7 @@ public class LoginSteps {
 	private RegisterPage registerPage = new RegisterPage(DriverFactory.getDriver());
 	private Properties prop;
 
-	public LoginSteps() {
-		this.prop = ApplicationHooks.getProp();
-	}
-
+	
 
 
 	@Given("The user is in the Sign in page")

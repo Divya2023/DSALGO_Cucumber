@@ -9,7 +9,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.List;
 import java.util.Map;
 
-import com.aventstack.extentreports.util.Assert;
+
 import com.factory.DriverFactory;
 import com.pages.HomePage;
 import com.pages.RegisterPage;

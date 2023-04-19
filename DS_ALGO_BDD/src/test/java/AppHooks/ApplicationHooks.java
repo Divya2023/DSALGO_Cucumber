@@ -1,5 +1,7 @@
+
 package AppHooks;
 
+import java.io.ByteArrayInputStream;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
@@ -14,6 +16,7 @@ import com.util.ConfigReader;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import io.qameta.allure.Allure;
 
 public class ApplicationHooks {
 	
@@ -54,6 +57,8 @@ public class ApplicationHooks {
 				String screenshotName = scenario.getName().replaceAll(" ", "_");
 				byte[] sourcePath = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
 				scenario.attach(sourcePath, "image/png", screenshotName);
+				Allure.addAttachment("Myscreenshot",
+						new ByteArrayInputStream(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES)));
 
 			}
 		}
