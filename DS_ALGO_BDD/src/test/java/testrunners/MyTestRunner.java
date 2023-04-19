@@ -6,11 +6,11 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"FeatureFiles/Register.feature"},
+		features = {"FeatureFiles/"},
 		glue = {"stepdefinitions", "AppHooks"},
 		tags = "",
 		monochrome=false,
-	
+
 		dryRun=false,
 	   
 		plugin = {"pretty",
