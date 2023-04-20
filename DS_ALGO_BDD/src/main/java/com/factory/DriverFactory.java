@@ -12,10 +12,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	
-		public WebDriver driver;
-
-		public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
-
+		//public WebDriver driver;
+		private static WebDriver driver;
+		//public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+		private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 		/**
 		 * This method is used to initialize the threadlocal driver on the basis of given
 		 * browser
@@ -23,7 +23,7 @@ public class DriverFactory {
 		 * @param browser
 		 * @return this will return tldriver.
 		 */
-		public WebDriver init_driver(String browser) {
+		public synchronized  WebDriver init_driver(String browser) {
 
 			System.out.println("browser value is: " + browser);
 

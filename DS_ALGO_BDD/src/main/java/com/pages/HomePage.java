@@ -228,6 +228,14 @@ public class HomePage {
 
 	}
 
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+	public void clickongetstart_DS()
+	{
+		getstart_datastructures.click();
+	}
+
 
 
 

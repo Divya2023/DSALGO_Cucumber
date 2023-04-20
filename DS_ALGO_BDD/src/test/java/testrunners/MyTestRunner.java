@@ -6,9 +6,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"FeatureFiles/"},
+		features = {"FeatureFiles/TC05-GraphPage.feature"},
 		glue = {"stepdefinitions", "AppHooks"},
-		tags = "",
+		tags = " ",
 		monochrome=false,
 
 		dryRun=false,
