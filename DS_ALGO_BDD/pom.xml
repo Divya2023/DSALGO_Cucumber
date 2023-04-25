@@ -70,6 +70,15 @@
 			<version>${cucumber.version}</version>
 			
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.9.2</version>
+    <scope>test</scope>
+</dependency>
+
+
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>
@@ -89,6 +98,13 @@
     <groupId>org.apache.logging.log4j</groupId>
     <artifactId>log4j-core</artifactId>
     <version>2.20.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-cucumber6-jvm -->
+<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-cucumber6-jvm</artifactId>
+    <version>2.13.8</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->

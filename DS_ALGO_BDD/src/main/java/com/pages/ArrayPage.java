@@ -14,9 +14,12 @@ public class ArrayPage {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	String ArrayPage_URL = ConfigReader.getHomePageUrl();
+	String ArrayinPythonPage_URL = ConfigReader.getArrayinPythonPageURL();
 	String tryEditorURL=ConfigReader.getTryEditorpageurl();
 	String ArrayPage_ListURL=ConfigReader.getArraysusingListpageurl();
+	String PracticePage_URL= ConfigReader.getPracticePageurl();
 	String QuestionSearchthearrayURL=ConfigReader.getQuestionSearchthearrayurl();
+
 
 	@FindBy(linkText = "Arrays in Python")
 	WebElement arraysinpython_link;
@@ -67,26 +70,34 @@ public class ArrayPage {
 	{
 		driver.get(ArrayPage_URL);
 	}
+	public void getArrayinPythonPageURL()
+	{
+		driver.get(ArrayinPythonPage_URL);
+	}
+	public void getArrayusingListPageURL()
+	{
+		driver.get(ArrayPage_ListURL);
+	}
 	public void clickOnTryHereLink(String bname, String dsname) {
 		//Loggerload.info("click on " + bname + " button on " + dsname);
 		TryHere.click();
 
 	}
-	public TryEditorPage clickon_Try_Here()
+	public void clickon_Try_Here()
 	{
 		TryHere.click();
-		return new TryEditorPage( driver);
+		//return new TryEditorPage( driver);
 	}
-	public ArraysinPythonPage clickon_arraysinpython_link()
+	public void clickon_arraysinpython_link()
 	{
 		arraysinpython_link.click();
-		return new ArraysinPythonPage(driver);
+	//	return new ArraysinPythonPage(driver);
 	}
 
-	public ArraysUsingListPage clickon_ArraysUsingList_link()
+	public void clickon_ArraysUsingList_link()
 	{
 		ArraysUsingList_link.click();
-		return new ArraysUsingListPage(driver);
+		//return new ArraysUsingListPage(driver);
 	}
 
 	public void clickon_BasicOperation_list()
@@ -122,6 +133,11 @@ public class ArrayPage {
 	public void getQuestionsearcharrayurl()
 	{
 		driver.get(QuestionSearchthearrayURL);
+	}
+	
+	public void getpracticePageURL()
+	{
+		driver.get(PracticePage_URL);
 	}
 
 

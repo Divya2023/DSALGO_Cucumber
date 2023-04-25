@@ -16,7 +16,7 @@ import com.util.ConfigReader;
 public class LoginPage {
 	private WebDriver driver;
 	private WebDriverWait wait;
-	String HomePAGE_URL = ConfigReader.getHomePageUrl();
+	String LoginPage_URL = ConfigReader.getLoginPageUrl();
 
 
 	// 1. By Locators: OR
@@ -55,7 +55,7 @@ public class LoginPage {
 	
 	public void getLoginPage()
 	{
-		driver.get(HomePAGE_URL);
+		driver.get(LoginPage_URL);
 	}
 	public boolean doLogin() {
 		

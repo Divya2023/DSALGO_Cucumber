@@ -27,10 +27,7 @@ public class LoginSteps {
 	private RegisterPage registerPage = new RegisterPage(DriverFactory.getDriver());
 	private Properties prop;
 
-	public LoginSteps() {
-		this.prop = ApplicationHooks.getProp();
-	}
-
+	
 
 
 	@Given("The user is in the Sign in page")
@@ -100,15 +97,17 @@ public class LoginSteps {
 	public void the_user_is_in_the_home_page_with_valid_log_in() {
 		//I'm just writing code using properties file, if not we can provide values directly in the feature file likeGiven The user is on signin page with valid username "Numpysdet84" and password "sdet84batch"
 		homePage.clickOnSignLink();
-		String userName = prop.getProperty("username");
-		String passWord = prop.getProperty("password");
-		loginPage.enterCredentials(userName, passWord);
+		//String userName = prop.getProperty("username");
+		//String passWord = prop.getProperty("password");
+		loginPage.enterCredentials("Numpysdet84", "sdet84batch");
 		loginPage.doLogin();
 	}
 
 	@Then("The user redirected to homepage")
 	public void the_user_redirected_to_homepage()
-	{ assertTrue(homePage.islogoutmsgdisplayed(), "Log out message not displayed");
+	{ 
+     String HomePageTitle= homePage.getPageTitle();
+		assertEquals(HomePageTitle, "NumpyNinja");
 	}
 
 

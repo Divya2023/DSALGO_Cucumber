@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Apr 18, 2023 11:52:32 a.m.</span></a>
+<a href="#"><span class="badge badge-primary">Apr 20, 2023 11:17:35 a.m.</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -76,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -84,31 +79,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@TS_AR9</a><a class="dropdown-item" href="#">@TS_AR6</a><a class="dropdown-item" href="#">@TS_AR3</a><a class="dropdown-item" href="#">@TS_array_16</a><a class="dropdown-item" href="#">@TS_array_15</a><a class="dropdown-item" href="#">@TS_AR10</a><a class="dropdown-item" href="#">@TS_array_13</a><a class="dropdown-item" href="#">@TS_AR4</a><a class="dropdown-item" href="#">@TS_AR7</a><a class="dropdown-item" href="#">@TS_AR8</a><a class="dropdown-item" href="#">@TS_array_11</a><a class="dropdown-item" href="#">@TS_AR2</a><a class="dropdown-item" href="#">@TS_AR5</a><a class="dropdown-item" href="#">@TS_AR1</a><a class="dropdown-item" href="#">@TS_array_14</a><a class="dropdown-item" href="#">@TS_array_12</a>
+<a class="dropdown-item" href="#">@TS_graph_08</a><a class="dropdown-item" href="#">@TS_graph_05</a><a class="dropdown-item" href="#">@TS_graph_02</a><a class="dropdown-item" href="#">@TS_graph_03</a><a class="dropdown-item" href="#">@TS_graph_10</a><a class="dropdown-item" href="#">@TS_graph_06</a><a class="dropdown-item" href="#">@TS_graph_09</a><a class="dropdown-item" href="#">@TS_graph_04</a><a class="dropdown-item" href="#">@TS_graph_07</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Array Page feature file</p>
+            <p class="name">Graph Page feature file</p>
             <p class="text-sm">
-              <span>11:52:33 a.m.</span> / <span>00:01:27:403</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>11:17:37 a.m.</span> / <span>00:00:42:056</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Array Page feature file</h5>
-<span class='badge badge-success'>04.18.2023 11:52:33</span>
-<span class='badge badge-danger'>04.18.2023 11:54:01</span>
-<span class='badge badge-default'>00:01:27:403</span>
+<h5 class="test-status text-pass">Graph Page feature file</h5>
+<span class='badge badge-success'>04.20.2023 11:17:37</span>
+<span class='badge badge-danger'>04.20.2023 11:18:19</span>
+<span class='badge badge-default'>00:00:42:056</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -118,38 +113,43 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>User navigated to "Arrays" Data Structure Page</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Graph Data Structure Page</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_is_on_signin_page_of_ds_algo_portal()">
+                <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_enter_valid_and(java.lang.String,java.lang.String)">
+                <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_click_on_login_button()">
+                <span>And The user click on login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the(java.lang.String)">
-                <span>Given The user is on the "Home Page"</span>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.the_user_redirected_to_homepage()">
+                <span>Then The user redirected to homepage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_selecting_arrays_from_the_drop_down_menu()">
-                <span>When The user selecting Arrays from the drop down menu</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_is_on_the_home_page_after_logged_in()">
+                <span>Given The user is on the home page after logged in</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_directed_to_page(java.lang.String)">
-                <span>Then The user should be directed to "Arrays" Page</span>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_clicks_the_graph_item_from_the_drop_down_menu()">
+                <span>When The user clicks the graph item from the drop down menu</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_be_directed_to_graph_page()">
+                <span>Then The user be directed to Graph Page</span>
       <div>
       </div>
               </div>
@@ -159,38 +159,43 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Arrays in Python page</div>
+        <div class="node" id="19"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Graph page</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_is_on_signin_page_of_ds_algo_portal()">
+                <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_enter_valid_and(java.lang.String,java.lang.String)">
+                <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_click_on_login_button()">
+                <span>And The user click on login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Array page" after logged in</span>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.the_user_redirected_to_homepage()">
+                <span>Then The user redirected to homepage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_button(java.lang.String)">
-                <span>When The user clicks "Arrays in Python" button</span>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_is_on_the_graph_page()">
+                <span>Given The user is on the Graph Page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_directed_to(java.lang.String)">
-                <span>Then The user should be directed to "ArraysinPython"</span>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_clicks_graph_link_on_graph_page()">
+                <span>When The user clicks Graph link on Graph page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_should_be_redirected_to_graph_graph_page()">
+                <span>Then The user should be redirected to Graph Graph page</span>
       <div>
       </div>
               </div>
@@ -200,38 +205,43 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor from Arrays in Python page</div>
+        <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>The user should be directed to editor page with run button to test python code</div>
       </div>
     </div>
         <div class="collapse">
           <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_is_on_signin_page_of_ds_algo_portal()">
+                <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_enter_valid_and(java.lang.String,java.lang.String)">
+                <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_click_on_login_button()">
+                <span>And The user click on login button</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Arrays in Python page" after logged in</span>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.the_user_redirected_to_homepage()">
+                <span>Then The user redirected to homepage</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_button_on(java.lang.String,java.lang.String)">
-                <span>When The user clicks "Try Here" button on "Arrays in Python page"</span>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_navigates_to_graph_graph_page()">
+                <span>Given The user navigates to Graph Graph page</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
-                <span>Then The user should be redirected to a page having an tryEditor with a Run button to test</span>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_clicks_on_tryhere_link_in_graph_page()">
+                <span>When The user clicks on Tryhere link in Graph Page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_should_be_directed_to_editor_page_with_run_button()">
+                <span>Then The user should be directed to Editor page with Run button</span>
       <div>
       </div>
               </div>
@@ -241,93 +251,54 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="35"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays in Python page</div>
+        <div class="node" id="53"><span class="badge log pass-bg mr-2">Pass</span>The user is able to run code in Editor for Graph page</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="36"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays in Python page</div>
+                  <div class="node" id="54"><span class="badge log pass-bg mr-2">Pass</span>The user is able to run code in Editor for Graph page</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
+                    <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+                    <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+                    <span>And The user click on login button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Given The user is in a page having an tryEditor with a Run button to test</span>
+                    <span>Then The user redirected to homepage</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid python code in tryEditor from sheet "pythonCode" and 0</span>
+                    <span>Given The user is in a page having an Editor with a Run button to test</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
+                    <span>When The user enters valid python code in Editor from sheet "pythonCode" and 0</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then The user should be presented with Run result</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="48"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays in Python page</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
+                    <span>And clicks run button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given The user is in a page having an tryEditor with a Run button to test</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When The user enter Invalid syntax in tryEditor from sheet "pythonCode" and 1</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then The user should be presented with error message</span>
+                    <span>Then The user is presented with the result after run button is clicked</span>
       <div>
       </div>
                   </div>
@@ -338,131 +309,54 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Arrays Using List page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Array page" after logged in</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_arrays_using_list_link()">
-                <span>When The user clicks Arrays Using List link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_page(java.lang.String)">
-                <span>Then The user should be redirected to "Arrays Using List" page</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="71"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor from Arrays Using List page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Arrays Using List page" after logged in</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_button_on_the(java.lang.String,java.lang.String)">
-                <span>When The user clicks "Try Here" button on the "Arrays Using List page"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
-                <span>Then The user should be redirected to a page having an tryEditor with a Run button to test</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="82"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays Using List page</div>
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for invalid code in Editor for Graph page</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="83"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays Using List page</div>
+                  <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for invalid code in Editor for Graph page</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
+                    <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+                    <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+                    <span>And The user click on login button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Given The user is in a page having an tryEditor with a Run button to test</span>
+                    <span>Then The user redirected to homepage</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid python code in tryEditor from sheet "pythonCode" and 0</span>
+                    <span>Given The user is in a page having an Editor with a Run button to test</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
+                    <span>When The user enters invalid python code in Editor from sheet "pythonCode" and 1</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then The user should be presented with Run result</span>
+                    <span>And clicks run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user gets an error message</span>
       <div>
       </div>
                   </div>
@@ -473,49 +367,146 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays Using List page page</div>
+        <div class="node" id="93"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to graph page and click on Graph Representations link</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_is_on_signin_page_of_ds_algo_portal()">
+                <span>Given The user is on Signin page of DS Algo portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_enter_valid_and(java.lang.String,java.lang.String)">
+                <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_click_on_login_button()">
+                <span>And The user click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.the_user_redirected_to_homepage()">
+                <span>Then The user redirected to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_in_editor_page_and_navigates_to_the_graph_page()">
+                <span>Given The user in editor page and navigates to the graph page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_clicks_on_graph_representations_link()">
+                <span>When The user clicks on Graph Representations link</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_should_be_redirected_to_graph_representations_page()">
+                <span>Then The user should be redirected to Graph Representations page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>The user should be directed to editor page with run button to test python code from Graph Representations page</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_is_on_signin_page_of_ds_algo_portal()">
+                <span>Given The user is on Signin page of DS Algo portal</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_enter_valid_and(java.lang.String,java.lang.String)">
+                <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.DS_SD.the_user_click_on_login_button()">
+                <span>And The user click on login button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.LoginSteps.the_user_redirected_to_homepage()">
+                <span>Then The user redirected to homepage</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_is_in_graph_representations_page()">
+                <span>Given The user is in Graph Representations page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_clicks_on_tryhere_link_on_graph_representations_page()">
+                <span>When The user clicks on Tryhere link on graph representations page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinitions.Graph_SD.the_user_navigates_to_editor_page_with_run_button()">
+                <span>Then The user navigates to Editor page with Run button</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="127"><span class="badge log pass-bg mr-2">Pass</span>The user is able to run code in Editor for Graph Representations page</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Arrays Using List page page</div>
+                  <div class="node" id="128"><span class="badge log pass-bg mr-2">Pass</span>The user is able to run code in Editor for Graph Representations page</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
+                    <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+                    <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+                    <span>And The user click on login button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Given The user is in a page having an tryEditor with a Run button to test</span>
+                    <span>Then The user redirected to homepage</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter Invalid syntax in tryEditor from sheet "pythonCode" and 1</span>
+                    <span>Given The user is in a page having an Editor with a Run button to test</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
+                    <span>When The user enters valid python code in Editor from sheet "pythonCode" and 0</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then The user should be presented with error message</span>
+                    <span>And clicks run button</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then The user is presented with the result after run button is clicked</span>
       <div>
       </div>
                   </div>
@@ -526,361 +517,54 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="108"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Basic Operations in Lists page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Array page" after logged in</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_basic_operations_in_lists_link()">
-                <span>When The user clicks Basic Operations in Lists link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_basic_operations_in_lists_page()">
-                <span>Then The user should be redirected to Basic Operations in Lists page</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="119"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to a page having an tryEditor f Basic Operations in Lists page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Basic Operations in Lists" after logged in</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_button_on_page(java.lang.String,java.lang.String)">
-                <span>When The user clicks "Try Here" button on "Basic Operations in Lists" page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_a_page_having_an_try_editor_with_a_run_button_to_test()">
-                <span>Then The user should be redirected to a page having an tryEditor with a Run button to test</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="130"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Basic Operations in Lists page</div>
+        <div class="node" id="147"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for invalid code in Editor for Graph Representations page</div>
       </div>
     </div>
         <div class="scenario_outline collapse">
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="131"><span class="badge log pass-bg mr-2">Pass</span>The user is able run code in tryEditor for Basic Operations in Lists page</div>
+                  <div class="node" id="148"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for invalid code in Editor for Graph Representations page</div>
                 </div>
               </div>
               <div class="card-body mt-3 collapse">
                   <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
+                    <span>Given The user is on Signin page of DS Algo portal</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
+                    <span>When The user enter valid "Numpysdet84" and "sdet84batch"</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
+                    <span>And The user click on login button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Given The user is in a page having an tryEditor with a Run button to test</span>
+                    <span>Then The user redirected to homepage</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid python code in tryEditor from sheet "pythonCode" and 0</span>
+                    <span>Given The user is in a page having an Editor with a Run button to test</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
+                    <span>When The user enters invalid python code in Editor from sheet "pythonCode" and 1</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>Then The user should be presented with Run result</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="143"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for code with invalid syntax in tryEditor for Basic Operations in Lists page</div>
-      </div>
-    </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="144"><span class="badge log pass-bg mr-2">Pass</span>The user is presented with error message for code with invalid syntax in tryEditor for Basic Operations in Lists page</div>
-                </div>
-              </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
+                    <span>And clicks run button</span>
       <div>
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given The user is in a page having an tryEditor with a Run button to test</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When The user enter Invalid syntax in tryEditor from sheet "pythonCode" and 1</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then The user should be presented with error message</span>
-      <div>
-      </div>
-                  </div>
-              </div>
-            </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="156"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Practice page</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Arrays in Python page" after logged in</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_practice_questions_link()">
-                <span>When The user clicks Practice Questions link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_practice_page()">
-                <span>Then The user should be redirected to Practice page</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="167"><span class="badge log pass-bg mr-2">Pass</span>The user is able to navigate to Question page from Search the array link</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_sign_in_page()">
-                <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_enter_valid_and_to_login(java.lang.String,java.lang.String)">
-                <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.user_should_be_redirected_to_home_page_with_the_message(java.lang.String)">
-                <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_is_on_the_after_logged_in(java.lang.String)">
-                <span>Given The user is on the "Practice page" after logged in</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_clicks_the_search_the_array_link()">
-                <span>When The user clicks the Search the array link</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="stepdefinitions.Arrays_SD.the_user_should_be_redirected_to_question_page_contains_an_try_editor_with_run_and_submit_buttons()">
-                <span>Then The user should be redirected to question page contains an tryEditor with Run and Submit buttons</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="178"><span class="badge log fail-bg mr-2">Fail</span>The user is able to run code in tryEditor for Search the array link</div>
-          <div class="status-avatar float-right mr-4">
-            <i class="fa fa-paperclip"></i>
-          </div>
-      </div>
-    </div>
-        <div class="scenario_outline ">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="179"><span class="badge log fail-bg mr-2">Fail</span>The user is able to run code in tryEditor for Search the array link</div>
-                    <div class="status-avatar float-right">
-                      <i class="fa fa-paperclip"></i>
-                    </div>
-                </div>
-              </div>
-              <div class="card-body mt-3 ">
-                  <div class="step pass-bg">
-                    <span>Given The user is on sign in Page</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When The user enter valid "Numpysdet84" and "sdet84batch" to login</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then user should be redirected to homePage with the message "New Account Created. You are logged in as <username>"</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Given The user is on "Question" page of "Search the array" after logged in</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When The user enter valid python code in tryEditor from sheet "pythonCode" and 2 for the question</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And The user clicks on run button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step fail-bg">
-                    <span>Then The user should be presented with Run result</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : SyntaxError: bad input on line 5}
-  (Session info: chrome=112.0.5615.87): SyntaxError: bad input on line 5
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DI', ip: '192.168.2.23', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.87, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\divya\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:53668}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 26d96ab8e57ed308811f38adf50096fc
-*** Element info: {Using=xpath, value=//pre[@id='output']}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy34.isDisplayed(Unknown Source)
-	at com.pages.TryEditorPage.isResultdisplayed(TryEditorPage.java:58)
-	at stepdefinitions.Arrays_SD.the_user_should_be_presented_with_run_result(Arrays_SD.java:171)
-	at ✽.The user should be presented with Run result(file:///C:/Users/divya/git/DSALGO_Cucumber/DS_ALGO_BDD/featureFiles/ArrayPage.feature:121)
-</textarea>
-      
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>AppHooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)</span>
-      <div>The_user_is_able_to_run_code_in_tryEditor_for_Search_the_array_link
-          <div class="row mb-3"><div class="col-md-3">
-    <img data-featherlight='../../screenshot/embedded1.png' src="../../screenshot/embedded1.png">
-    
-    </div></div>
-</div>
+                    <span>Then The user gets an error message</span>
       <div>
       </div>
                   </div>
@@ -900,63 +584,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.UnhandledAlertException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.UnhandledAlertException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:54:00 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='188'>Then The user should be presented with Run result</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to run code in tryEditor for Search the array link.Then The user should be presented with Run result</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">16</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">9</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -965,12 +597,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_AR9</p>
+<p class="name">@TS_graph_08</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_AR9</h4>
+<h4>@TS_graph_08</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -984,11 +616,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:18 a.m.</td>
+<td>11:18:04 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='96'>The user is able run code in tryEditor for Arrays Using List page page</a>
+<a href="#" class="linked" test-id='1' id='110'>The user should be directed to editor page with run button to test python code from Graph Representations page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able run code in tryEditor for Arrays Using List page page</span>
+<span class="badge badge-default">Graph Page feature file.The user should be directed to editor page with run button to test python code from Graph Representations page</span>
 </div>
 </td>
 </tr>
@@ -1001,12 +633,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_AR6</p>
+<p class="name">@TS_graph_05</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_AR6</h4>
+<h4>@TS_graph_05</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1020,11 +652,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:01 a.m.</td>
+<td>11:17:49 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='60'>The user is able to navigate to Arrays Using List page</a>
+<a href="#" class="linked" test-id='1' id='54'>The user is able to run code in Editor for Graph page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to Arrays Using List page</span>
+<span class="badge badge-default">Graph Page feature file.The user is able to run code in Editor for Graph page</span>
 </div>
 </td>
 </tr>
@@ -1037,12 +669,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_AR3</p>
+<p class="name">@TS_graph_02</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_AR3</h4>
+<h4>@TS_graph_02</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1056,47 +688,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:52:43 a.m.</td>
+<td>11:17:37 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='24'>The user is able to navigate to a page having an tryEditor from Arrays in Python page</a>
+<a href="#" class="linked" test-id='1' id='2'>The user is able to navigate to Graph Data Structure Page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to a page having an tryEditor from Arrays in Python page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@TS_array_16</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_array_16</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>11:53:55 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='179'>The user is able to run code in tryEditor for Search the array link</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to run code in tryEditor for Search the array link</span>
+<span class="badge badge-default">Graph Page feature file.The user is able to navigate to Graph Data Structure Page</span>
 </div>
 </td>
 </tr>
@@ -1109,12 +705,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_array_15</p>
+<p class="name">@TS_graph_03</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_array_15</h4>
+<h4>@TS_graph_03</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1128,11 +724,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:50 a.m.</td>
+<td>11:17:42 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='167'>The user is able to navigate to Question page from Search the array link</a>
+<a href="#" class="linked" test-id='1' id='19'>The user is able to navigate to Graph page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to Question page from Search the array link</span>
+<span class="badge badge-default">Graph Page feature file.The user is able to navigate to Graph page</span>
 </div>
 </td>
 </tr>
@@ -1145,12 +741,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_AR10</p>
+<p class="name">@TS_graph_10</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_AR10</h4>
+<h4>@TS_graph_10</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1164,11 +760,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:26 a.m.</td>
+<td>11:18:14 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='108'>The user is able to navigate to Basic Operations in Lists page</a>
+<a href="#" class="linked" test-id='1' id='148'>The user is presented with error message for invalid code in Editor for Graph Representations page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to Basic Operations in Lists page</span>
+<span class="badge badge-default">Graph Page feature file.The user is presented with error message for invalid code in Editor for Graph Representations page</span>
 </div>
 </td>
 </tr>
@@ -1181,12 +777,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_array_13</p>
+<p class="name">@TS_graph_06</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_array_13</h4>
+<h4>@TS_graph_06</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1200,57 +796,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:39 a.m.</td>
+<td>11:17:55 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='144'>The user is presented with error message for code with invalid syntax in tryEditor for Basic Operations in Lists page</a>
+<a href="#" class="linked" test-id='1' id='74'>The user is presented with error message for invalid code in Editor for Graph page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is presented with error message for code with invalid syntax in tryEditor for Basic Operations in Lists page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>2</span>
-</span>
-<p class="name">@TS_AR4</p>
-<p class="duration text-sm">2 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_AR4</h4>
-<span status="pass" class='badge log pass-bg'>2 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:52:49 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='36'>The user is able run code in tryEditor for Arrays in Python page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able run code in tryEditor for Arrays in Python page</span>
-</div>
-</td>
-</tr>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:52:56 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='48'>The user is able run code in tryEditor for Arrays in Python page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able run code in tryEditor for Arrays in Python page</span>
+<span class="badge badge-default">Graph Page feature file.The user is presented with error message for invalid code in Editor for Graph page</span>
 </div>
 </td>
 </tr>
@@ -1263,12 +813,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_AR7</p>
+<p class="name">@TS_graph_09</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_AR7</h4>
+<h4>@TS_graph_09</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1282,11 +832,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:06 a.m.</td>
+<td>11:18:09 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='71'>The user is able to navigate to a page having an tryEditor from Arrays Using List page</a>
+<a href="#" class="linked" test-id='1' id='128'>The user is able to run code in Editor for Graph Representations page</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to a page having an tryEditor from Arrays Using List page</span>
+<span class="badge badge-default">Graph Page feature file.The user is able to run code in Editor for Graph Representations page</span>
 </div>
 </td>
 </tr>
@@ -1299,12 +849,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_AR8</p>
+<p class="name">@TS_graph_04</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_AR8</h4>
+<h4>@TS_graph_04</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1318,11 +868,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:11 a.m.</td>
+<td>11:17:45 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='83'>The user is able run code in tryEditor for Arrays Using List page</a>
+<a href="#" class="linked" test-id='1' id='36'>The user should be directed to editor page with run button to test python code</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able run code in tryEditor for Arrays Using List page</span>
+<span class="badge badge-default">Graph Page feature file.The user should be directed to editor page with run button to test python code</span>
 </div>
 </td>
 </tr>
@@ -1335,12 +885,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@TS_array_11</p>
+<p class="name">@TS_graph_07</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@TS_array_11</h4>
+<h4>@TS_graph_07</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -1354,191 +904,11 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:30 a.m.</td>
+<td>11:18:00 a.m.</td>
 <td>
-<a href="#" class="linked" test-id='1' id='119'>The user is able to navigate to a page having an tryEditor f Basic Operations in Lists page</a>
+<a href="#" class="linked" test-id='1' id='93'>The user is able to navigate to graph page and click on Graph Representations link</a>
 <div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to a page having an tryEditor f Basic Operations in Lists page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TS_AR2</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_AR2</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:52:39 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='13'>The user is able to navigate to Arrays in Python page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to Arrays in Python page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TS_AR5</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_AR5</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:52:56 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='48'>The user is able run code in tryEditor for Arrays in Python page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able run code in tryEditor for Arrays in Python page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TS_AR1</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_AR1</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:52:33 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>User navigated to "Arrays" Data Structure Page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.User navigated to "Arrays" Data Structure Page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TS_array_14</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_array_14</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:45 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='156'>The user is able to navigate to Practice page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able to navigate to Practice page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@TS_array_12</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@TS_array_12</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>11:53:35 a.m.</td>
-<td>
-<a href="#" class="linked" test-id='1' id='131'>The user is able run code in tryEditor for Basic Operations in Lists page</a>
-<div class="">
-<span class="badge badge-default">Array Page feature file.The user is able run code in tryEditor for Basic Operations in Lists page</span>
+<span class="badge badge-default">Graph Page feature file.The user is able to navigate to graph page and click on Graph Representations link</span>
 </div>
 </td>
 </tr>
@@ -1559,25 +929,25 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Apr 18, 2023 11:52:32 a.m.</h3>
+<h3>Apr 20, 2023 11:17:35 a.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Apr 18, 2023 11:54:01 a.m.</h3>
+<h3>Apr 20, 2023 11:18:19 a.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -1593,12 +963,12 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1616,9 +986,9 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='93%'><b>15</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>9</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='6%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1636,9 +1006,9 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='99%'><b>103</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>67</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>1</b> steps failed,
+<small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -1655,7 +1025,7 @@ Session ID: 26d96ab8e57ed308811f38adf50096fc
 </div></div>
 <script>
 var timeline = {
-"Array Page feature file":87.403
+"Graph Page feature file":42.056
 };
 </script>
 <div class="row">
@@ -1665,7 +1035,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@TS_AR9</td>
+<td>@TS_graph_08</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1673,7 +1043,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_AR6</td>
+<td>@TS_graph_05</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1681,7 +1051,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_AR3</td>
+<td>@TS_graph_02</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1689,15 +1059,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_array_16</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@TS_array_15</td>
+<td>@TS_graph_03</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1705,7 +1067,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_AR10</td>
+<td>@TS_graph_10</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1713,7 +1075,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_array_13</td>
+<td>@TS_graph_06</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1721,15 +1083,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_AR4</td>
-<td>2</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TS_AR7</td>
+<td>@TS_graph_09</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1737,7 +1091,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_AR8</td>
+<td>@TS_graph_04</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1745,47 +1099,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@TS_array_11</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TS_AR2</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TS_AR5</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TS_AR1</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TS_array_14</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@TS_array_12</td>
+<td>@TS_graph_07</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -1801,19 +1115,19 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 15,
-failChild: 1,
+passChild: 9,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 103,
-failGrandChild: 1,
+passGrandChild: 67,
+failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,

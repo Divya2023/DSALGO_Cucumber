@@ -2,6 +2,8 @@ package com.pages;
 
 
 
+import java.time.Duration;
+
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -139,7 +141,7 @@ public class HomePage {
 	public boolean islogoutmsgdisplayed()
 	
 	{
-		WebDriverWait wait = new WebDriverWait(driver, 30);
+		WebDriverWait wait = new WebDriverWait(driver, (30));
 		wait.until(ExpectedConditions.visibilityOf(LogOutMsg)).isDisplayed();
 		
 		boolean logout_ms_display= LogOutMsg.isDisplayed();
@@ -224,6 +226,14 @@ public class HomePage {
 		String str_actual= UserNotLoginMsg.getText();
 		return str_actual;
 
+	}
+
+	public String getPageTitle() {
+		return driver.getTitle();
+	}
+	public void clickongetstart_DS()
+	{
+		getstart_datastructures.click();
 	}
 
 
